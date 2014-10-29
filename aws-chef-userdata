@@ -1,0 +1,6 @@
+#!/bin/bash
+ROLE="base"
+ENV="_default"
+wget --no-check-certificate http://chef-server/aws-chef.sh
+chmod +x aws-chef
+./aws-chef.sh $ROLE $ENV
